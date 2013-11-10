@@ -4,8 +4,64 @@
 		<meta charset="UTF-8" />
 		<title>javascript</title>
 		<script>
-//comentario
-
+		//coment
+		/*comentario*/
+		//alert("hola mundo");
+		//document.write("<h1>hola mundo</h1>");
+		//document.write(20+3);
+		//document.write("hola" + 10);
+		//document.write("hola" + (10+5.9));
+		/*var nombre="celeste";
+		var edad = 32;
+		
+		document.write(nombre);*/
+		//var nombre = prompt("Escribe tu nombre");
+		//document.write(nombre);
+		
+		/*function calculaAreaRectangulo(base,altura){
+			var area = base*altura;
+			return area;
+			
+		}
+		
+		var area = calculaAreaRectangulo(10,5);
+		document.write("El area es: "+area)*/
+		
+		
+		 var calculaAreaRectangulo = function(base,altura){
+			var area = base*altura;
+			return area;
+			
+		};
+		
+		function calculaArea(mifuncion){
+			return mifuncion(10,5);
+		}
+		
+		//var area = calculaArea(calculaAreaRectangulo);
+		//document.write("El area es: "+area)
+		
+		var persona = new Object();
+		persona.nombre = "Celeste";
+		persona.edad = 32;
+		persona.hablar = function(){
+			alert("Hola");
+		};
+		
+		var persona2={
+			nombre:"Celeste",
+			edad:32,
+			hablar:function(mensaje){
+				alert(mensaje);}
+			
+		};
+		
+		
+		document.write("Nombre: " + persona2.nombre);
+		persona2.hablar("hola a todos");
+		
+		//alert(0.2+0.1);
+		
 		</script>
 
 	</head>
