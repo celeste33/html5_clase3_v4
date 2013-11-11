@@ -16,45 +16,43 @@
 				width: 500px;
 			}
 		</style>
-		
+
 		<script src="../javascript/jquery-1.10.2.min.js"></script>
-		<script>	
-		$(function() {
-			var estaFeliz=false;
+		<script>
+			$(function() {
+				var estaFeliz=false;
 				var boton = $("#boton-animar");
-				
-				
-				
-					boton.click(function() {
-						if (estaFeliz)
+	
+				boton.click(function() {
+				if (estaFeliz)
 				{
-					var txt = $("#estado");
-					txt.html("Homero Feliz!");
-					var img = $("img");
-					img.attr("src","../imagenes/sad_homer.jpg");
-						
-					
-				}
-					
-					else{
-						boton.click(function() {
 					var txt = $("#estado");
 					txt.html("Homero Triste");
 					var img = $("img");
-					img.attr("src","../imagenes/happy_homer.jpg");
-						
-					
-					}
-					});
+					img.attr("src","../imagenes/sad_homer.jpg");
+					estaFeliz = false;
+				}
 				
+				else
+				{
+				
+					var txt = $("#estado");
+					txt.html("Homero Feliz");
+					var img = $("img");
+					img.attr("src","../imagenes/happy_homer.jpg");
+					estaFeliz = true;
+	
+				}
+				});
 
-			});	
+			});
 
+			
 		</script>
 
 	</head>
 	<body>
-		
+
 		<p>
 			<button id="boton-animar" >
 				Animar!
@@ -67,8 +65,6 @@
 				Homero Triste
 			</p>
 		</div>
-		
-
 
 	</body>
 </html>
